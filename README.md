@@ -21,13 +21,13 @@ environment with values from your .env file.  You can
 alternatively set the env_file argument or the ENV_FILE
 environment variable to read from another env file.
 
-    from yaev import populate_env
+    from yaep import populate_env
     populate_env()
 
 Now you can setup your configuration. For example, in a
 settings.py or config.py:
 
-    from yaev import env
+    from yaep import env
     DATABASE_URL = env('DATABASE_URL', 'sqlite://:memory:')
 
 The env function has a few other useful tricks.  For example,
